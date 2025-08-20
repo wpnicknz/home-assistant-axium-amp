@@ -1,6 +1,8 @@
 # Home Assistant Axium Amp Integration
 
-This is a custom integration for controlling Axium multi-room amplifiers from Home Assistant.
+This is a custom integration for controlling Axium multi-room amplifiers from Home Assistant. For more information about Axium amplifiers, please visit https://www.axium.co.nz/.
+**Note:** This integration is **community developed** and is **not affiliated with, endorsed by, or supported by Axium**.  Please do not contact Axium for support related to this software.
+
 
 ## Features
 - Power control (on/off per zone)
