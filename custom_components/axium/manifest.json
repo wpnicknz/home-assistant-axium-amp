@@ -1,13 +1,12 @@
 {
   "domain": "axium",
-  "name": "Axium Amplifier",
+  "name": "Axium Amp",
   "version": "0.14.6",
-  "documentation": "https://github.com/wpnicknz/home-assistant-axium-amp",
+  "documentation": "local",
   "requirements": [
     "aiohttp>=3.8.1"
   ],
-  "codeowners": ["@wpnicknz"],
+  "codeowners": [],
   "iot_class": "local_push",
-  "integration_type": "hub",
   "config_flow": true
 }

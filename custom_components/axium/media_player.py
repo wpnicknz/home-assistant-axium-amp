@@ -23,34 +23,13 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry, async_add_e
     entities = [AxiumZonePlayer(coord, z) for z in coord.zones]
     async_add_entities(entities)
 
-
 class AxiumZonePlayer(AxiumEntity, MediaPlayerEntity):
     _attr_supported_features = SUPPORT_FLAGS
 
     def __init__(self, coordinator: AxiumCoordinator, zone: int):
         super().__init__(coordinator, zone)
-        # Let the coordinator/1C decide the display name; we’ll fall back to "Zone X" in the property.
-        self._attr_name = None
-        # Make sure HA doesn’t try to compose “Device Name: Entity Name”
-        self._attr_has_entity_name = False
+        self._attr_name = f"Zone {zone}"
         self._attr_unique_id = f"axium_media_z{zone}"
-
-    # IMPORTANT: keep entity name purely the 1C zone name (fallback to "Zone X")
-    @property
-    def name(self) -> str | None:
-        return self.coordinator.zone_names.get(self.zone) or f"Zone {self.zone}"
-
-    # Give the DEVICE a neutral/static name to avoid duplicating the entity name in cards
-    @property
-    def device_info(self):
-        return {
-            "identifiers": {("axium", f"zone_{self.zone}")},
-            "manufacturer": "Axium",
-            # Use a non-zone label here so cards that show device + entity don't say "Dining Dining"
-            "name": f"Axium Zone {self.zone}",
-            # optionally add model if you have it cached on the coordinator (e.g., "AX-800")
-            # "model": self.coordinator.model or None,
-        }
 
     @property
     def state(self):

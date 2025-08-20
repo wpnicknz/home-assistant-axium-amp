@@ -2,10 +2,10 @@
   "config": {
     "step": {
       "user": {
-        "title": "Axium Amp Integration",
+        "title": "Axium",
         "description": "Connect to your Axium amplifier",
         "data": {
-          "host": "IP Address (e.g. 192.168.1.1)",
+          "host": "Host (e.g. 192.168.70.10)",
           "zones": "Zones (comma-separated, e.g. 1,2,3)",
           "scan_interval": "Poll interval (seconds)"
         }
