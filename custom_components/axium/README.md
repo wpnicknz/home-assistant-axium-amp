@@ -1,0 +1,1 @@
+# Axium – Home Assistant Custom Integration (v14.6)\n\n- Snapshot parse at startup\n- Long-poll push\n- Power, Volume, Source\n
