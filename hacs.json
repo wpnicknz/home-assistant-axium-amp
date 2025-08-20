@@ -1,0 +1,6 @@
+{
+  "name": "Axium Amp",
+  "content_in_root": false,
+  "domains": ["axium"],
+  "homeassistant": "2023.0.0"
+}
