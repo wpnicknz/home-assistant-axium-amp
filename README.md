@@ -11,9 +11,19 @@ This is a custom integration for controlling Axium multi-room amplifiers from Ho
 - Long-polling for near real-time updates
 
 ## Installation
+
+### HACS (recommended)
+1. Open HACS in Home Assistant.
+2. Go to **Integrations** → click the three dots (⋮) → **Custom repositories**.
+3. Add this repo URL:  
+   `https://github.com/wpnicknz/home-assistant-axium-amp`  
+   Category: **Integration**.
+4. Search for **Axium Amp** in HACS and install.
+5. Restart Home Assistant.
+
+### Manual
 1. Copy the `custom_components/axium` folder into your Home Assistant `config/custom_components/` directory.
 2. Restart Home Assistant.
-3. Add the integration through the UI (Configuration → Devices & Services → Add Integration → Axium).
 
 ## Configuration
 1. Enter the IP Address of the Axium Amp
