@@ -1,6 +1,6 @@
 {
   "domain": "axium",
-  "name": "Axium Matrix Amplifier",
+  "name": "Axium Amplifier",
   "version": "0.14.6",
   "documentation": "https://github.com/wpnicknz/home-assistant-axium-amp",
   "requirements": [
