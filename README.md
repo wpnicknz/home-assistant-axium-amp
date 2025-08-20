@@ -10,7 +10,7 @@ This is a custom integration for controlling Axium multi-room amplifiers from Ho
 - Source selection with friendly names
 - Media Card support
 - Zone name discovery via Axium HTTP
-- Long-polling for near real-time updates
+- Long-polling for real-time updates
 
 ## Installation
 
